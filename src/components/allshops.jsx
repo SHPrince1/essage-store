@@ -36,6 +36,9 @@ import Speaker from "../images/speaker.jpeg";
 import Pbank from "../images/pbank.jpeg";
 import Tv from "../images/tv1.webp";
 import Tv1 from "../images/tv.webp";
+import Media from "../images/homet.webp";
+import Laptop from "../images/laptop.jpg";
+import Ps5 from '../images/ps5.webp';
 
 const AllShops = () => {
   return (
@@ -155,17 +158,17 @@ const AllShops = () => {
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Tv1}
+              img={Media}
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Tv}
+              img={Ps5}
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Tv1}
+              img={Laptop}
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
@@ -181,17 +184,17 @@ const AllShops = () => {
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Tv1}
+                  img={Media}
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Tv}
+                  img={Ps5}
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Tv1}
+                  img={Laptop}
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
