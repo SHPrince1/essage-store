@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div>
+        <div className={style.left}>
           <a href="href=https://essage.com">Login</a> | <a href="href=https://essage.com">Register</a>
         </div>
       </nav>

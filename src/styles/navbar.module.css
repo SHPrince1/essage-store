@@ -48,6 +48,11 @@
 .dropdownContent a {
   color: #000;
 }
+.left a{
+  color: #fff;
+  text-decoration: none;
+  
+}
 .ulItem {
   display: flex;
   /* position: relative; */
