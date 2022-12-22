@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../styles/cards.module.css";
-import Supersale from '../images/supersale.webp'
+
 
 const Cards = (props) => {
   return (
@@ -23,7 +23,7 @@ const Cards = (props) => {
             {/* <p>rate</p> */}
         </div>
         <div className={style.cardVisit}>
-            <a href="">Visit Shop</a>
+            <a href="href=https://essage.com">Visit Shop</a>
         </div>
       </div>
     </>

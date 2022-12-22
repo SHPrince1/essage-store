@@ -12,7 +12,7 @@ import CardE from "../components/card-e";
 import CardTv from "../components/card-tv";
 
 // importations of images
-import Supersale from "../images/supersale.webp";
+// import Supersale from "../images/supersale.webp";
 import Elec from "../images/electronics.jpeg";
 import Gadget from "../images/gadgets.jpeg";
 import Wears from "../images/wears.jpeg";
@@ -21,7 +21,7 @@ import Acces from "../images/accessories.jpeg";
 import Books from "../images/books.jpeg";
 import Mencol from "../images/mencol.webp";
 import Smartwatch from "../images/smartwatch.webp";
-import Men from "../images/mencol.webp";
+// import Men from "../images/mencol.webp";
 import Pef from "../images/pef.jpeg";
 import Cream from "../images/cream.jpeg";
 import Eye from "../images/eye.jpeg";
@@ -35,7 +35,7 @@ import Awatch from "../images/awatch.jpeg";
 import Speaker from "../images/speaker.jpeg";
 import Pbank from "../images/pbank.jpeg";
 import Tv from "../images/tv1.webp";
-import Tv1 from "../images/tv.webp";
+// import Tv1 from "../images/tv.webp";
 import Media from "../images/homet.webp";
 import Laptop from "../images/laptop.jpg";
 import Ps5 from '../images/ps5.webp';
@@ -48,48 +48,48 @@ const AllShops = () => {
         <div>
           <div className={style.textHead}>
             <p>All Shops</p>
-            <a href="">View All</a>
+            <a href="https://essage.com">View All</a>
           </div>
           <div className={style1.cardBox}>
-            <Cards title="Electronics" img={Elec} />
-            <Cards title="Gadgets" img={Gadget} />
-            <Cards title="Wears" img={Wears} />
-            <Cards title="Food stuff" img={Foodstuff} />
-            <Cards title="Accesories" img={Acces} />
-            <Cards title="Books" img={Books} />
+            <Cards title="Electronics" img={Elec} alt="" />
+            <Cards title="Gadgets" img={Gadget} alt="" />
+            <Cards title="Wears" img={Wears} alt=""/>
+            <Cards title="Food stuff" img={Foodstuff} alt="" />
+            <Cards title="Accesories" img={Acces} alt=""/>
+            <Cards title="Books" img={Books}alt="" />
           </div>
           {/* mobile view */}
           <div>
             <div className={style1.mobilecardBox}>
               <div className={style1.singleBox}>
-                <Cards title="Electronics" img={Elec} />
-                <Cards title="Gadgets" img={Gadget} />
+                <Cards title="Electronics" img={Elec} alt="" />
+                <Cards title="Gadgets" img={Gadget} alt=""/>
               </div>
               <div className={style1.singleBox}>
-                <Cards title="Wears" img={Wears} />
-                <Cards title="Food stuff" img={Foodstuff} />
+                <Cards title="Wears" img={Wears} alt="" />
+                <Cards title="Food stuff" img={Foodstuff} alt="" />
               </div>
               <div className={style1.singleBox}>
-                <Cards title="Accesories" img={Acces} />
-                <Cards title="Books" img={Books} />
+                <Cards title="Accesories" img={Acces} alt="" />
+                <Cards title="Books" img={Books} alt="" />
               </div>
             </div>
           </div>
           <div className={style1.imgBanner}>
-            <img className={style1.imgCont} src={Mencol} />
+            <img className={style1.imgCont} src={Mencol}  alt=""/>
           </div>
           <div>
             <div className={style.textHead}>
               <p>DAILY PICKS</p>
-              <a href="">View All</a>
+              <a href="href=https://essage.com" >View All</a>
             </div>
             <div className={style1.cardBox}>
-              <CardE title="skin care" price="10,000.00" img={Cream} />
-              <CardE title="Perfumes" price="20,000.00" img={Pef} />
-              <CardE title="Sun glass" price="5,720.000" img={Eye} />
-              <CardE title="Hair Care" price="3,000.00" img={Hair} />
-              <CardE title="Baby lotion" price="15,000.00" img={Baby} />
-              <CardE title="tootpaste" price="1500.00" img={Paste} />
+              <CardE title="skin care" price="10,000.00" img={Cream} alt="" />
+              <CardE title="Perfumes" price="20,000.00" img={Pef} alt=""/>
+              <CardE title="Sun glass" price="5,720.000" img={Eye}alt="" />
+              <CardE title="Hair Care" price="3,000.00" img={Hair} alt=""/>
+              <CardE title="Baby lotion" price="15,000.00" img={Baby}alt="" />
+              <CardE title="tootpaste" price="1500.00" img={Paste} alt=""/>
             </div>
           </div>
 
@@ -97,78 +97,78 @@ const AllShops = () => {
           <div>
             <div className={style1.mobilecardBox}>
               <div className={style1.singleBox}>
-                <CardE title="skin care" price="10,000.00" img={Cream} />
-                <CardE title="Perfumes" price="20,000.00" img={Pef} />
+                <CardE title="skin care" price="10,000.00" img={Cream}alt="" />
+                <CardE title="Perfumes" price="20,000.00" img={Pef} alt="" />
               </div>
               <div className={style1.singleBox}>
-                <CardE title="Sun glass" price="5,720.000" img={Eye} />
-                <CardE title="Hair Care" price="3,000.00" img={Hair} />
+                <CardE title="Sun glass" price="5,720.000" img={Eye} alt="" />
+                <CardE title="Hair Care" price="3,000.00" img={Hair} alt=""/>
               </div>
               <div className={style1.singleBox}>
-                <CardE title="Baby lotion" price="15,000.00" img={Baby} />
-                <CardE title="tootpaste" price="1500.00" img={Paste} />
+                <CardE title="Baby lotion" price="15,000.00" img={Baby}alt="" />
+                <CardE title="tootpaste" price="1500.00" img={Paste}alt="" />
               </div>
             </div>
           </div>
 
           <div className={style1.imgBanner}>
-            <img className={style1.imgCont} src={Smartwatch} />
+            <img className={style1.imgCont} src={Smartwatch} alt="" />
           </div>
           <div>
             <div className={style.textHead}>
               <p>FRESH FINDS</p>
-              <a href="#">View all</a>
+              <a href="href=https://essage.com">View all</a>
             </div>
 
             <div className={style1.cardBox}>
-              <CardE title="Smart Watch" img={Watch} />
-              <CardE title="Laptop Bag" img={Bag} />
-              <CardE title="Ear Pod" img={Pod} />
-              <CardE title="Wrist watch" img={Awatch} />
-              <CardE title="Power Bank" img={Pbank} />
-              <CardE title="Bluetooth Speaker" img={Speaker} />
+              <CardE title="Smart Watch" img={Watch} alt="" />
+              <CardE title="Laptop Bag" img={Bag} alt="" />
+              <CardE title="Ear Pod" img={Pod} alt="" />
+              <CardE title="Wrist watch" img={Awatch} alt="" />
+              <CardE title="Power Bank" img={Pbank} alt="" />
+              <CardE title="Bluetooth Speaker" img={Speaker} alt="" />
             </div>
           </div>
           {/* mobile view */}
           <div>
             <div className={style1.mobilecardBox}>
               <div className={style1.singleBox}>
-                <CardE title="Smart Watch" img={Watch} />
-                <CardE title="Laptop Bag" img={Bag} />
+                <CardE title="Smart Watch" img={Watch} alt="" />
+                <CardE title="Laptop Bag" img={Bag} alt="" />
               </div>
               <div className={style1.singleBox}>
-                <CardE title="Ear Pod" img={Pod} />
-                <CardE title="Wrist watch" img={Awatch} />
+                <CardE title="Ear Pod" img={Pod} alt="" />
+                <CardE title="Wrist watch" img={Awatch} alt="" />
               </div>
               <div className={style1.singleBox}>
-                <CardE title="Power Bank" img={Pbank} />
-                <CardE title="Bluetooth Speaker" img={Speaker} />
+                <CardE title="Power Bank" img={Pbank} alt=""/>
+                <CardE title="Bluetooth Speaker" img={Speaker} alt=""/>
               </div>
             </div>
           </div>
 
           <div className={style.textHead}>
             <p>Featured Group</p>
-            <a href="">View All</a>
+            <a href="href=https://essage.com">View All</a>
           </div>
           <div className={style1.cardBox}>
             <CardTv
-              img={Tv}
+              img={Tv} alt=""
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Media}
+              img={Media} alt=""
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Ps5}
+              img={Ps5} alt=""
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
             <CardTv
-              img={Laptop}
+              img={Laptop} alt=""
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
             />
@@ -179,22 +179,22 @@ const AllShops = () => {
             <div className={style1.mobilecardBox}>
               <div className={style1.singleBoxTv}>
                 <CardTv
-                  img={Tv}
+                  img={Tv} alt=""
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Media}
+                  img={Media} alt=""
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Ps5}
+                  img={Ps5} alt=""
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />
                 <CardTv
-                  img={Laptop}
+                  img={Laptop} alt=""
                   h6="A NNEMY TELEVISION GROUP"
                   content="A NNEMY TELEVISION GROUP"
                 />

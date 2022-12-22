@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import style from "../styles/slider.module.css";
+// import style from "../styles/slider.module.css";
 import Carousel from 'react-bootstrap/Carousel';
 import Supersale from '../images/supersale.webp'
 import Slider2 from "../images/slider-2.webp"

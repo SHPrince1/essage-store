@@ -33,48 +33,48 @@ const Footer = () => {
           <div className={style.footHead}>
             <div>
 
-            <a href="#">About us</a>
+            <a href="href=https://essage.com">About us</a>
             </div>
             <div className={style.footCol}>
-              <a href="#">About Essage</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms and condition</a>
-              <a href="#">Our Blog</a>
+              <a href="href=https://essage.com">About Essage</a>
+              <a href="href=https://essage.com">Privacy Policy</a>
+              <a href="href=https://essage.com">Terms and condition</a>
+              <a href="href=https://essage.com">Our Blog</a>
             </div>
           </div>
           <div className={style.footHead}>
             <div>
 
-            <a href="#">Help</a>
+            <a href="href=https://essage.com">Help</a>
             </div>
             <div className={style.footCol}>
-              <a href="#">Support@essage.com</a>
-              <a href="#">Help center</a>
-              <a href="#">Contact Us</a>
-              <a href="#">FAQ</a>
+              <a href="href=https://essage.com">Support@essage.com</a>
+              <a href="href=https://essage.com">Help center</a>
+              <a href="href=https://essage.com">Contact Us</a>
+              <a href="href=https://essage.com">FAQ</a>
             </div>
           </div>
           <div className={style.footHead}>
             <div>
 
-            <a href="#">Most Ads Region</a>
+            <a href="href=https://essage.com">Most Ads Region</a>
             </div>
             <div className={style.footCol}>
-              {/* <a href="#">Support@essage.com</a>
-              <a href="#">Help center</a>
-              <a href="#">Contact Us</a>
-              <a href="#">FAQ</a> */}
+              {/* <a href="href=https://essage.com">Support@essage.com</a>
+              <a href="href=https://essage.com">Help center</a>
+              <a href="href=https://essage.com">Contact Us</a>
+              <a href="href=https://essage.com">FAQ</a> */}
             </div>
           </div>
           <div className={style.footHead}>
             <div>
 
-            <a href="#">Moile app cooming soon</a>
+            <a href="href=https://essage.com">Moile app cooming soon</a>
             </div>
             <div className={style.footCol}>
-             <img src=""/>
+             <img src="" alt=""/>
              <p>Stay Conected</p>
-              <img src="" />
+              <img src="" alt="" />
             </div>
           </div>
         </div>

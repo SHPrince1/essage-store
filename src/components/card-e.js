@@ -1,13 +1,13 @@
 import React from "react";
 import style from "../styles/carde.module.css";
-import Books from '../images/books.jpeg'
+
 
 const CardE = (props) => {
   return (
     <div>
       <div className={style.cardBox}>
         <div className={style.imgBox}>
-           <img className={style.imgElem} 
+           <img className={style.imgElem} alt="" 
            src={props.img} />
         </div>
         <div className={style.cardsTit}>
