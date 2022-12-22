@@ -63,7 +63,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={style.dropdownBox}>
-            <a href="#">Babies</a>
+            <a href="href=https://essage.com">Babies</a>
             <div className={style.dropdownContent}>
               <a href="href=https://essage.com">Babies and Kids accessories</a>
               <a href="href=https://essage.com">Babies care</a>
