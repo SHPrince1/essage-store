@@ -1,0 +1,53 @@
+.cardBox{
+    display: flex;
+    /*border: 1px solid red;
+    */background-color: #ffffff;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+    border-radius:10px;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.mobilecardBox{
+    display: none;
+}
+.imgCont{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .cardBox{
+        /* flex-direction: column; */
+        display: none;
+    }
+    .mobilecardBox{
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid red;
+        */background-color: #ffffff;
+        box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+        border-radius:10px;
+        gap: 10px;
+        justify-content: center;
+        padding: 20px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+
+    }
+    .singleBox{
+        display:flex;
+        /* flex-direction: column; */
+    }
+    .singleBoxTv{
+        display: flex;
+        overflow: auto;
+        gap: 5px;
+    }
+}

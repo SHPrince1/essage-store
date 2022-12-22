@@ -1,0 +1,61 @@
+p{
+    font-size: 12px;
+}
+.parentDiv{
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    width: 170px;
+    height: 320px;
+    padding: 10px;
+    cursor: pointer;
+}
+.parentDiv:hover{
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+    border-radius:10px;
+}
+.cardsTit p, .imgElem, .cardscont, .cardsrate{
+    /* padding: 0 10px; */
+}
+.imgElem{
+    width: 150px;
+    height: 150px;
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.parentDiv:hover .imgElem{
+    padding: 0px;
+    /*  */
+}
+.cardsTit{
+    font-weight: bold;
+    font-family: poppins;
+
+}
+.cardscont p{
+    color: #707070;
+    font-weight: bold;
+    font-family: poppins;
+}
+.cardVisit a{
+    /*border: 2px solid red;
+    */background-color: #ddd1d1;
+    color:#707070;
+    display: flex;
+    height:35px;
+    padding: 5px;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+.cardVisit a:hover{
+    background-color: green;
+    color:#fff;
+}

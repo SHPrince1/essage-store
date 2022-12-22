@@ -1,0 +1,100 @@
+.parentBox{
+    /* border: 1px solid red; */
+    margin-top: 90px;
+}
+.topFooter{
+    background-color:#1d1d1f;
+    display:flex;
+    gap: 10px;
+    color: #fff;
+    height: 135px;
+    padding: 20px;
+}
+
+.inputcont{
+    display: flex;
+    gap: 4px;
+}
+.subText{
+    /* padding: 10px; */
+    line-height: 10px;
+    font-size: 18px;
+}
+.subText p{
+    /* padding: 10px; */
+    line-height: 10px;
+    font-size: 13px;
+    font-family: poppins;
+}
+.inputbox{
+    height: 40px;
+    width: 290px;
+    padding: 10px;
+    background-color:#828282;
+    color:#fff;
+}
+::placeholder{
+    color: #fff;
+}
+.inputbox ::placeholder{
+   opacity: 1;
+    color:#fff;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: #1976d2;
+    color: #fff;
+    border: 0px solid #1976d2;
+}
+.bottomFooter{
+    padding: 50px 40px;
+    background-color:#323232;
+    height:280px
+}
+.bottomFooterBox{
+    display: flex;
+    gap: 180px;
+}
+.footHead{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footHead a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.footCol{
+    display: flex;
+    flex-direction: column;
+    gap: px;
+}
+.footCol a{
+    color:#50748c;
+    
+}
+
+.footCol p{
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .topFooter{
+        flex-direction: column;
+    }
+
+    .bottomFooterBox{
+        flex-direction: column;
+        gap:10px;
+        height: 200px;
+    }
+    .bottomFooter{
+        height: 480px;
+    }
+}

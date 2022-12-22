@@ -1,0 +1,84 @@
+.textHead{
+    background-color: #ececec;
+    height: 44px;
+    padding: 8px 20px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    /* font-weight: bolder; */
+    font-family: poppins;
+    font-size:18px;
+
+
+}
+
+.textHead:hover{
+    background-color:#1976d2;
+    color: #fff;
+}
+.textHead p, .textHead a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-family: poppins;
+
+}
+.textHead:hover  .textHead a{
+    color: #fff;
+}
+.contentBox{
+    /*border: 1px solid blue;
+    */display: block;
+    gap: 200px;
+    height: 320px;
+    background-color: #ffffff;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+    border-radius:10px;
+    padding: 50px 50px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.content{
+    margin: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.contentCol{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 15px;
+}
+.iconNames{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content:center;
+    align-items:center;
+}
+.iconNames a{
+    text-decoration: none;
+    color:#707070;
+    font-weight: bold;
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .contentBox{
+        overflow: auto;
+    }
+    .contentCol{
+        display: flex;
+    justify-content: space-evenly;
+    grid-gap: 15px;
+    gap: 15px;
+    width: 600px;
+    margin-left: -90px;
+    }
+    .contentCol a{
+        font-size: 10px;
+    }
+
+}

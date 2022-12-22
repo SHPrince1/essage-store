@@ -1,0 +1,9 @@
+.parentDiv{
+    /* padding:1px 200px; */
+     max-width: 1120px !important;
+}
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px !important;
+}

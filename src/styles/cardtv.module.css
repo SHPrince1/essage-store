@@ -1,0 +1,56 @@
+.cardBox{
+    height: 380px;
+    width: 300px;
+    border: 2px solid #dfd9d9;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:  0.2s ease-out;
+    -webkit-transition:  0.2s ease-out;
+    -moz-transition:  0.2s ease-out;
+    -ms-transition:  0.2s ease-out;
+    -o-transition:  0.2s ease-out;
+}
+.cardBox:hover{
+    padding: 30px;
+    border: 5px solid #dfd9d9;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.imgElement{
+    width: 260px;
+}
+.logBox{
+    width:300px;
+}
+.logBox a {
+    display:flex;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #1976d2;
+    color: #fff;
+    justify-content: center;
+    /*margin: 0 auto;
+    */padding: 10px auto;
+    width: 150px;
+    height:38px;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.logBox a:hover{
+    background-color: white;
+    color: #000;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 2px ;
+
+}
