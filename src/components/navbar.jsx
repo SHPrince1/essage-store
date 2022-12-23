@@ -151,7 +151,7 @@ const Navbar = () => {
           <div className={style.mobileLinksBox}>
             {/* <h4>MY ACCOUNT</h4> */}
             <div className={style.mobileLinks}>
-             <a><button>Sell on Essage</button> </a> 
+             <a href="href=https://essage.com"><button>Sell on Essage</button> </a> 
               <a href="href=https://essage.com"> Contact Support</a>
             </div>
           </div>
