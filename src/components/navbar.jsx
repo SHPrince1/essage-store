@@ -120,26 +120,23 @@ const Navbar = () => {
         </div>
       </nav>
       {/* Mobile navbar */}
-      <div  className={visible ?  style.mobileNavBoxShowM : style.mobileNavBox}>
-        <div>
+      <div className={visible ? style.mobileNavBoxShowM : style.mobileNavBox}>
+        <div className={style.mobileSemiBox}>
           <div className={style.mobileMenuBox}>
-            <GiHamburgerMenu onClick={ToggleBurger}
-           />
-            <h4>Menu</h4>
+            <GiHamburgerMenu onClick={ToggleBurger} />
+            <h4>Essage</h4>
           </div>
 
           <div className={style.mobileLinksBox}>
-            <h4>MY ACCOUNT</h4>
+            <h5>MY ACCOUNT</h5>
             <div className={style.mobileLinks}>
               <a href="href=https://essage.com"> Register</a>
               <a href="href=https://essage.com"> Login</a>
             </div>
           </div>
 
-        
-
           <div className={style.mobileLinksBox}>
-            <h4>Categories</h4>
+            <h5>Categories</h5>
             <div className={style.mobileLinks}>
               <a href="href=https://essage.com"> Electronics</a>
               <a href="href=https://essage.com"> Real Estate</a>
@@ -148,18 +145,16 @@ const Navbar = () => {
               <a href="href=https://essage.com"> Jobs</a>
               <a href="href=https://essage.com"> Vehicles</a>
               <a href="href=https://essage.com"> Agriculture and Food</a>
-              
             </div>
           </div>
 
           <div className={style.mobileLinksBox}>
-            <h4>MY ACCOUNT</h4>
+            {/* <h4>MY ACCOUNT</h4> */}
             <div className={style.mobileLinks}>
-              <a href="href=https://essage.com"> Register</a>
-              <a href="href=https://essage.com"> Login</a>
+             <a><button>Sell on Essage</button> </a> 
+              <a href="href=https://essage.com"> Contact Support</a>
             </div>
           </div>
-          
         </div>
       </div>
     </>

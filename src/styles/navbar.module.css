@@ -108,11 +108,17 @@
 .mobileLinks{
   display:flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 28px;
 }
 .mobileLinks a{
   text-decoration: none;
   
+}
+.mobileLinks button{
+  background-color: #08B059;
+  color:#fff;
+  padding:5px 10px;
+  border: 1px solid #08b059;
 }
 
 /*  */
@@ -174,20 +180,26 @@
     padding: 0 20px;
     background-color: #fff;
     margin-top: -10px;
-    display:none;
+    /* display:none; */
+    /* margin-right: 290px; */
     transition: 0.4s ease-out;
   }
+
+  
   .mobileNavBoxShowM {
-    position: relative;
-    height: 600px;
-    
-    width: 290px;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    overflow: scroll;
+    width: 300px;
     /* border: 2px solid black; */
     z-index: 10;
     padding: 0 20px;
     background-color: #fff;
-    margin-top: -10px;
+    margin-left: -4px;
+    margin-top: 0px;
     /* display:none; */
     transition: 0.4s ease-out;
   }
+  
 }
