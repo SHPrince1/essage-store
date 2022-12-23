@@ -48,16 +48,71 @@
 .dropdownContent a {
   color: #000;
 }
-.left a{
+.left a {
   color: #fff;
   text-decoration: none;
-  
 }
 .ulItem {
   display: flex;
   /* position: relative; */
   gap: 25px;
   padding: 12px;
+}
+
+/* mobile nav view */
+.mobileNavBox {
+  position: relative;
+  
+  width: 260px;
+  border: 2px solid black;
+  z-index: 10;
+  padding: 0 20px;
+  background-color: #fff;
+  margin-top: -10px;
+  display:none;
+}
+
+.mobileNavBoxShow {
+  position: relative;
+  height: 600px;
+  
+  width: 290px;
+  border: 2px solid black;
+  z-index: 10;
+  padding: 0 20px;
+  background-color: #fff;
+  margin-top: -10px;
+  display:none;
+}
+.mobileMenuBox h1 {
+  color: #000;
+}
+.mobileMenuBox {
+  height: 40px;
+  width: 206px;
+  /* background-color: yellow; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 30px;
+  margin-left: -19px;
+}
+.mobileMenuBox h4 {
+  margin-top: -8px;
+}
+.mobileLinksBox{
+  margin-top: 30px;
+  /* border: 1px solid black; */
+
+}
+.mobileLinks{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mobileLinks a{
+  text-decoration: none;
+  
 }
 
 /*  */
@@ -68,13 +123,14 @@
   .dropdownParentBox {
     flex-direction: column;
     /*display: none;
-    */margin-top: -365px;
+    */
+    margin-top: -365px;
     transition: 0.5s ease-out;
     -webkit-transition: 0.5s ease-out;
     -moz-transition: 0.5s ease-out;
     -ms-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
-}
+  }
   .dropdownContent {
     background-color: #1976d2 !important;
     /* color: #fff !important; */
@@ -102,9 +158,36 @@
     padding: 42px;
     z-index: 1;
     transition: 0.4s ease-out;
-   
-}
+  }
   .ulItem {
     display: none;
+  }
+
+  /* mobile nav */
+
+  .mobileNavBox {
+    position: relative;
+    
+    width: 260px;
+    border: 2px solid black;
+    z-index: 10;
+    padding: 0 20px;
+    background-color: #fff;
+    margin-top: -10px;
+    display:none;
+    transition: 0.4s ease-out;
+  }
+  .mobileNavBoxShowM {
+    position: relative;
+    height: 600px;
+    
+    width: 290px;
+    /* border: 2px solid black; */
+    z-index: 10;
+    padding: 0 20px;
+    background-color: #fff;
+    margin-top: -10px;
+    /* display:none; */
+    transition: 0.4s ease-out;
   }
 }
