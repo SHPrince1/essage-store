@@ -13,9 +13,7 @@ p{
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
     border-radius:10px;
 }
-.cardsTit p, .imgElem, .cardscont, .cardsrate{
-    /* padding: 0 10px; */
-}
+
 .imgElem{
     width: 135px;
     height: 150px;
