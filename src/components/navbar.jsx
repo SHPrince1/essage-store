@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 // import Container from "react-bootstrap/Container";
 
 const Navbar = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   function ToggleBurger() {
     setVisible(!visible);
   }
