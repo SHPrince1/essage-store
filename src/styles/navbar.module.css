@@ -69,6 +69,7 @@
   padding: 0 20px;
   background-color: #fff;
   margin-top: -10px;
+  margin-right: 150px;
   display:none;
 }
 
@@ -112,6 +113,9 @@
 }
 .mobileLinks a{
   text-decoration: none;
+  color: #707070;
+  font-weight: light;
+  font-family: poppins;
   
 }
 .mobileLinks button{
@@ -119,6 +123,18 @@
   color:#fff;
   padding:5px 10px;
   border: 1px solid #08b059;
+}
+
+.mobileCat{
+  display:flex;
+  justify-content: space-evenly;
+  gap: 90px;
+
+}
+.mobileCat a{
+  text-decoration: none;
+  font-size: 18px;
+
 }
 
 /*  */
@@ -176,11 +192,12 @@
     
     width: 260px;
     border: 2px solid black;
+
     z-index: 10;
     padding: 0 20px;
     background-color: #fff;
-    margin-top: -10px;
-    /* display:none; */
+  
+    display:none;
     /* margin-right: 290px; */
     transition: 0.4s ease-out;
   }
@@ -191,8 +208,8 @@
     position: fixed;
     height: 100vh;
     overflow: scroll;
-    width: 300px;
-    /* border: 2px solid black; */
+    width: 340px;
+    border: 2px solid #707070;
     z-index: 10;
     padding: 0 20px;
     background-color: #fff;
@@ -201,5 +218,6 @@
     /* display:none; */
     transition: 0.4s ease-out;
   }
+  
   
 }
