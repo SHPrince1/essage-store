@@ -6,6 +6,7 @@ import Searchbar from "./components/searchbar";
 // import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/index";
+import Electronics from './pages/electronics';
 import Footer from "./components/footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
         <Routes>
           <Route path="/" exact element={<Index />} />
+          <Route path="/electronics" exact element={<Electronics />} />
         </Routes>
         <Footer />
       </Router>
