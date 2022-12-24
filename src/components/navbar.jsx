@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className={style.dropdownParentBox}>
           <div className={style.dropdownBox}>
             <div className={style.linkItemBox}>
-              <a href="href=https://essage.com" className={style.linkItem}>
+              <a href="/electronics" className={style.linkItem}>
                 Electronics
               </a>
             </div>
@@ -142,7 +142,7 @@ const Navbar = () => {
               <a href="href=https://essage.com"> View all</a>
             </div>
             <div className={style.mobileLinks}>
-              <a href="href=https://essage.com"> Electronics</a>
+              <a href="/electronics"> Electronics</a>
               <a href="href=https://essage.com"> Real Estate</a>
               <a href="href=https://essage.com"> Health and Beauty</a>
               <a href="href=https://essage.com"> Babies</a>
