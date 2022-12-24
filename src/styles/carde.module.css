@@ -24,7 +24,9 @@
 
 .cardsTit p, .price p{
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
     font-family: poppins;
     font-size: 15px;
 
