@@ -50,8 +50,8 @@
        
         /* border: 2px solid blue; */
         flex-wrap:wrap;
-        width: 350px;
-        /* width: fit-content; */
+        /* width: 350px; */
+        width: fit-content;
         /* padding: 20px; */
         /* margin: -14px; */
     }
