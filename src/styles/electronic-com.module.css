@@ -1,0 +1,45 @@
+.parentBox{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.cardParentBox{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.cardBox{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    margin-bottom:20px ;
+    flex-wrap: wrap;
+}
+
+.selectBox{
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .cardParentBox{
+        padding: 1px;
+        margin: -7px;
+    }
+    .cardBox{
+       
+        /* border: 2px solid blue; */
+        flex-wrap:wrap;
+        width: 400px;
+        width: fit-content;
+        /* padding: 20px; */
+        /* margin: -14px; */
+    }
+    .selectBox{
+        display: none;
+    }
+}
