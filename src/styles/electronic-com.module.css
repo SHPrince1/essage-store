@@ -24,17 +24,7 @@
     padding: 20px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 355px) {
-    .cardBox{
-       
-        /* border: 2px solid blue; */
-        flex-wrap:wrap;
-        width: 400px;
-        width: fit-content;
-        /* padding: 20px; */
-        /* margin: -14px; */
-    }
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .cardParentBox{
@@ -52,5 +42,17 @@
     }
     .selectBox{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 355px) {
+    .cardBox{
+       
+        /* border: 2px solid blue; */
+        flex-wrap:wrap;
+        width: 350px;
+        /* width: fit-content; */
+        /* padding: 20px; */
+        /* margin: -14px; */
     }
 }
