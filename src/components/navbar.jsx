@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "../styles/navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {GrClose} from 'react-icons/gr'
 // import Container from "react-bootstrap/Container";
 
 const Navbar = () => {
@@ -123,7 +124,7 @@ const Navbar = () => {
       <div className={visible ? style.mobileNavBoxShowM : style.mobileNavBox}>
         <div className={style.mobileSemiBox}>
           <div className={style.mobileMenuBox}>
-            <GiHamburgerMenu onClick={ToggleBurger} />
+            <GrClose onClick={ToggleBurger} />
             <h4>Essage</h4>
           </div>
           <div className={style.lineM}></div>
