@@ -8,7 +8,7 @@ const Searchbar = () => {
       <div className={style.parentBox}>
         <div className={style.fdiv}>
           <div className={style.logoBox}>
-            <h4>ESSAGE</h4>
+            <a href="/"> <h4>ESSAGE</h4></a>
           </div>
           <div className={style.inputBox}>
             <input type="text" placeholder="search for products" />

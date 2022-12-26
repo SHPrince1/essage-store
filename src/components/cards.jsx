@@ -10,7 +10,7 @@ const Cards = (props) => {
         <img
         className={style.imgElem}
             src={props.img} 
-            alt="First slide"
+            alt="new"
           />
         </div>
         <div className={style.cardsTit}>
