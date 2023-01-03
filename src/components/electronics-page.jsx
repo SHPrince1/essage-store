@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Container } from "react-bootstrap";
-import SelectBar from "./select";
+
 
 import style from "../styles/electronic-com.module.css";
 import Cards from "./cards";
-import SelectState from "./select-categories";
+
 import SelectCat from "./select-categories";
 
 // import LineImg from "https://www.istockphoto.com/photo/sunglasses-gm535415256-94900593";
