@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
 
 import { Container } from "react-bootstrap";
 import SelectBar from "./select";
@@ -6,14 +7,14 @@ import SelectBar from "./select";
 import style from "../styles/electronic-com.module.css";
 import Cards from "./cards";
 
-import ReactDOM from "react-dom";
-import ReactPaginate from "react-paginate";
 
 // import LineImg from "https://www.istockphoto.com/photo/sunglasses-gm535415256-94900593";
 
 const ElectronicsPage = () => {
 
-  
+ 
+
+ 
   return (
     <div>
       <Container>
@@ -49,7 +50,8 @@ const ElectronicsPage = () => {
               <Cards img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxXGJPYhwRnJNszMifmca5hxTJjq-MyDDJoEhLhW4MeX3mJhcURBWo2NKol1YucKXfPU&usqp=CAU" />
             </div>
 
-          
+           
+            
           </div>
         </div>
       </Container>

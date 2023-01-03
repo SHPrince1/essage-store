@@ -203,6 +203,8 @@ const AllShops = () => {
           </div>
         </div>
       </Container>
+
+      
     </div>
   );
 };
