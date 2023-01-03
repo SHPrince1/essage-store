@@ -1,30 +1,51 @@
 import React from "react";
 
-
 import { Container } from "react-bootstrap";
 import SelectBar from "./select";
 
 import style from "../styles/electronic-com.module.css";
 import Cards from "./cards";
-
+import SelectState from "./select-categories";
+import SelectCat from "./select-categories";
 
 // import LineImg from "https://www.istockphoto.com/photo/sunglasses-gm535415256-94900593";
 
 const ElectronicsPage = () => {
-
- 
-
- 
   return (
     <div>
       <Container>
         <div className={style.parentBox}>
           <div className={style.selectBox}>
-            <h1>HELLO WORLD</h1>
-            <p>Location</p>
-            <input />
-            <p>State</p>
-            <SelectBar />
+            
+          
+
+            <div className={style.selectCat}>
+              <h6>State</h6>
+              <div className={style.selectBox}>
+                <SelectCat />
+              </div>
+            </div>
+
+            <div className={style.selectCat}>
+              <h6>Categories</h6>
+              <div className={style.selectBox}>
+                <SelectCat />
+              </div>
+            </div>
+
+            <div className={style.selectCat}>
+              <h6>Sub Categories</h6>
+              <div className={style.selectBox}>
+                <SelectCat />
+              </div>
+            </div>
+
+            <div className={style.selectCat}>
+              <h6>Condition</h6>
+              <div className={style.selectBox}>
+                <SelectCat />
+              </div>
+            </div>
           </div>
           <div className={style.cardParentBox}>
             <div className={style.cardBox}>
@@ -49,9 +70,6 @@ const ElectronicsPage = () => {
               <Cards img="https://m.media-amazon.com/images/I/81lt5ENm1jL._AC_SL1500_.jpg" />
               <Cards img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxXGJPYhwRnJNszMifmca5hxTJjq-MyDDJoEhLhW4MeX3mJhcURBWo2NKol1YucKXfPU&usqp=CAU" />
             </div>
-
-           
-            
           </div>
         </div>
       </Container>
