@@ -2,11 +2,12 @@ import React from "react";
 
 import { Container } from "react-bootstrap";
 
-
 import style from "../styles/electronic-com.module.css";
 import Cards from "./cards";
+import SelectBar from "./select";
 
 import SelectCat from "./select-categories";
+import SelectState from "./select-state";
 
 // import LineImg from "https://www.istockphoto.com/photo/sunglasses-gm535415256-94900593";
 
@@ -16,34 +17,31 @@ const ElectronicsPage = () => {
       <Container>
         <div className={style.parentBox}>
           <div className={style.selectBox}>
-            
-          
-
-            <div className={style.selectCat}>
-              <h6>State</h6>
-              <div className={style.selectBox}>
-                <SelectCat />
+            <div className={style.selectCont}>
+              <div className={style.selectCat}>
+                <h6>State</h6>
+                <div className={style.selectBox}>
+                  <SelectBar />
+                </div>
               </div>
-            </div>
 
-            <div className={style.selectCat}>
-              <h6>Categories</h6>
-              <div className={style.selectBox}>
-                <SelectCat />
+              <div className={style.selectCat}>
+                <h6>Categories</h6>
+                <div className={style.selectBox}>
+                  <SelectCat />
+                </div>
               </div>
-            </div>
 
-            <div className={style.selectCat}>
-              <h6>Sub Categories</h6>
-              <div className={style.selectBox}>
-                <SelectCat />
+              <div className={style.selectCat}>
+                <h6>Condition</h6>
+                <div className={style.selectBox}>
+                  <SelectState />
+                </div>
               </div>
-            </div>
 
-            <div className={style.selectCat}>
-              <h6>Condition</h6>
-              <div className={style.selectBox}>
-                <SelectCat />
+              <div className={style.btnBox}>
+                <button className={style.reset}>Reset</button>
+                <button className={style.filter}>Filter</button>
               </div>
             </div>
           </div>

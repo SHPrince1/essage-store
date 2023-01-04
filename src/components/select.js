@@ -5,10 +5,10 @@ import style from "../styles/select.module.css"
 const options = [
     { value: 'abia', label: 'Abia' },
     { value: 'adamawa', label: 'Adamawa' },
-    { value: 'loyal', label: 'Loyal' },
+    { value: 'loyal', label: 'Loya' },
     { value: 'akwa ibom', label: 'Akwa Ibom' },
     { value: 'bauchi', label: 'Bauchi' },
-    { value: 'benue', label: 'benue' }, 
+    { value: 'benue', label: 'Benue' }, 
    
   ];
 
