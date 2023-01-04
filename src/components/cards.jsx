@@ -21,6 +21,7 @@ const Cards = (props) => {
         </div>
         <div className={style.cardsrate}>
             {/* <p>rate</p> */}
+            <p>{props.price}</p>
         </div>
         <div className={style.cardVisit}>
             <a href="href=https://essage.com">Visit Shop</a>

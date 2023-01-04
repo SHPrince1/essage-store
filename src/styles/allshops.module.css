@@ -1,5 +1,7 @@
+
 .cardBox{
     display: flex;
+    flex-wrap: wrap;
     /*border: 1px solid red;
     */background-color: #ffffff;
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;

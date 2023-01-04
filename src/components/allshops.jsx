@@ -40,6 +40,66 @@ import Media from "../images/homet.webp";
 import Laptop from "../images/laptop.jpg";
 import Ps5 from '../images/ps5.webp';
 
+
+const carde=[
+  {
+    id:0,
+    img:" ../images/cream.jpg",
+    title:"skin care",
+     price:"10,000.00", 
+
+    
+  },
+  {
+    id:1,
+    img:{Cream},
+    title:"Sun glass",
+     price:"10,000.00", 
+
+    
+  },
+  {
+    id:2,
+    img:{Cream},
+    title:"Body lotion",
+     price:"10,000.00", 
+
+    
+  },
+  {
+    id:3,
+    img:{Cream},
+    title:"Hair cream",
+     price:"10,000.00", 
+
+    
+  },
+  {
+    id:4,
+    img:{Cream},
+    title:"Tootpaste",
+    price:"10,000.00", 
+
+    
+  },
+  {
+    id:5,
+    img:{Cream},
+    title:"Perfume",
+    price:"10,000.00", 
+
+    
+  },
+  {
+    id:5,
+    img:{Cream},
+    title:"Perfume",
+    price:"10,000.00", 
+
+    
+  },
+]
+
 const AllShops = () => {
   return (
     <div>
@@ -84,12 +144,15 @@ const AllShops = () => {
               <a href="href=https://essage.com" >View All</a>
             </div>
             <div className={style1.cardBox}>
-              <CardE title="skin care" price="10,000.00" img={Cream} alt="" />
+              {carde.map((item)=>
+              <CardE key={item.id} img={item.img}  title={item.title} price={item.price}/>
+              )}
+              {/* <CardE title="skin care" price="10,000.00" img={Cream} alt="" />
               <CardE title="Perfumes" price="20,000.00" img={Pef} alt=""/>
               <CardE title="Sun glass" price="5,720.000" img={Eye}alt="" />
               <CardE title="Hair Care" price="3,000.00" img={Hair} alt=""/>
               <CardE title="Baby lotion" price="15,000.00" img={Baby}alt="" />
-              <CardE title="tootpaste" price="1500.00" img={Paste} alt=""/>
+              <CardE title="tootpaste" price="1500.00" img={Paste} alt=""/> */}
             </div>
           </div>
 
