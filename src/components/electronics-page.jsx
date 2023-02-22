@@ -132,7 +132,7 @@ const ElectronicsPage = () => {
 
   const options = {
     method: "GET",
-    url:'https://fakestoreapi.com/products/category/jewelery',
+    url:'https://fakestoreapi.com/products/category/electronics',
   
   };
 
