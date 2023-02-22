@@ -134,14 +134,17 @@ const AllShops = () => {
               <a href="href=https://essage.com">View All</a>
             </div>
             <div className={style1.cardBox}>
+              <div className={style1.cardBoxDaily}>
+
               {categoriesData.map((item, index) => (
-                <CardE
+                <Cards
                   key={item.id}
                   img={item.image}
                   title={item.title}
                   price={item.price}
                 />
               ))}
+              </div>
             </div>
           </div>
 

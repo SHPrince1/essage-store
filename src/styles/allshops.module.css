@@ -28,7 +28,15 @@
    gap: 10px;
 }
 
-
+.cardBoxDaily{
+    
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+    flex: 1 0 18%;
+    overflow: auto;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .cardBox{
@@ -77,5 +85,10 @@
         display: flex;
         overflow: auto;
         gap: 10px;
+    }
+
+    .cardBoxDaily{
+    
+       height: 300px;
     }
 }
