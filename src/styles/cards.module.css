@@ -7,7 +7,10 @@ p{
     width: 164px;
     height: 320px;
     padding: 10px;
+    flex: 1 0 10%;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
 }
 .parentDiv:hover{
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
@@ -56,4 +59,18 @@ p{
 .cardVisit a:hover{
     background-color: green;
     color:#fff;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+.parentDiv {
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    width: 138px;
+    height: 320px;
+    padding: 10px;
+    flex: 4 0 13%;
+    cursor: pointer;
+}
 }

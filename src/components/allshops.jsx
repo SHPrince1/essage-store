@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 // importations of modules and libraries
 import { Container } from "react-bootstrap";
 
@@ -13,12 +14,7 @@ import CardTv from "../components/card-tv";
 
 // importations of images
 // import Supersale from "../images/supersale.webp";
-import Elec from "../images/electronics.jpeg";
-import Gadget from "../images/gadgets.jpeg";
-import Wears from "../images/wears.jpeg";
-import Foodstuff from "../images/foodstuff.jpeg";
-import Acces from "../images/accessories.jpeg";
-import Books from "../images/books.jpeg";
+
 import Mencol from "../images/mencol.webp";
 import Smartwatch from "../images/smartwatch.webp";
 // import Men from "../images/mencol.webp";
@@ -41,66 +37,52 @@ import Laptop from "../images/laptop.jpg";
 import Ps5 from '../images/ps5.webp';
 
 
-const carde=[
-  {
-    id:0,
-    img:" ../images/cream.jpg",
-    title:"skin care",
-     price:"10,000.00", 
 
-    
-  },
-  {
-    id:1,
-    img:{Cream},
-    title:"Sun glass",
-     price:"10,000.00", 
-
-    
-  },
-  {
-    id:2,
-    img:{Cream},
-    title:"Body lotion",
-     price:"10,000.00", 
-
-    
-  },
-  {
-    id:3,
-    img:{Cream},
-    title:"Hair cream",
-     price:"10,000.00", 
-
-    
-  },
-  {
-    id:4,
-    img:{Cream},
-    title:"Tootpaste",
-    price:"10,000.00", 
-
-    
-  },
-  {
-    id:5,
-    img:{Cream},
-    title:"Perfume",
-    price:"10,000.00", 
-
-    
-  },
-  {
-    id:5,
-    img:{Cream},
-    title:"Perfume",
-    price:"10,000.00", 
-
-    
-  },
-]
 
 const AllShops = () => {
+
+  
+    const [productData, setProductData] = useState([]);
+    const [categoriesData, setCategoriesData] = useState([]);
+
+
+  const options = {
+    method: "GET",
+    url: "https://fakestoreapi.com/products",
+  };
+
+  useEffect(() => {
+    axios
+      .request(options)
+      .then(function (response) {
+        setProductData(response.data);
+
+        console.log (response.data);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  });
+
+  const secOptions = {
+    method: "GET",
+    url: 'https://fakestoreapi.com/products/category/jewelery',
+  };
+
+  useEffect(() => {
+    axios
+      .request(secOptions)
+      .then(function (response) {
+        setCategoriesData(response.data);
+
+        console.log (response.data);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  });
+
+
   return (
     <div>
       <Container>
@@ -111,30 +93,27 @@ const AllShops = () => {
             <a href="https://essage.com">View All</a>
           </div>
           <div className={style1.cardBox}>
-            <Cards title="Electronics" img={Elec} alt="" />
-            <Cards title="Gadgets" img={Gadget} alt="" />
-            <Cards title="Wears" img={Wears} alt=""/>
-            <Cards title="Food stuff" img={Foodstuff} alt="" />
-            <Cards title="Accesories" img={Acces} alt=""/>
-            <Cards title="Books" img={Books}alt="" />
+
+            {productData.map((item, index)=>{
+              return(
+                <Cards key={item.id}
+                   title={item.title}
+                   img={item.image}
+                   price={item.price}
+                  //  rate={item.rating}
+
+                   category={item.category}
+                
+                />
+                
+              )
+            })}
+           
+
+            {}
           </div>
           {/* mobile view */}
-          <div>
-            <div className={style1.mobilecardBox}>
-              <div className={style1.singleBox}>
-                <Cards title="Electronics" img={Elec} alt="" />
-                <Cards title="Gadgets" img={Gadget} alt=""/>
-              </div>
-              <div className={style1.singleBox}>
-                <Cards title="Wears" img={Wears} alt="" />
-                <Cards title="Food stuff" img={Foodstuff} alt="" />
-              </div>
-              <div className={style1.singleBox}>
-                <Cards title="Accesories" img={Acces} alt="" />
-                <Cards title="Books" img={Books} alt="" />
-              </div>
-            </div>
-          </div>
+         
           <div className={style1.imgBanner}>
             <img className={style1.imgCont} src={Mencol}  alt=""/>
           </div>
@@ -144,15 +123,10 @@ const AllShops = () => {
               <a href="href=https://essage.com" >View All</a>
             </div>
             <div className={style1.cardBox}>
-              {carde.map((item)=>
-              <CardE key={item.id} img={item.img}  title={item.title} price={item.price}/>
+              {categoriesData.map((item, index)=>
+              <CardE key={item.id} img={item.image}  title={item.title} price={item.price}/>
               )}
-              {/* <CardE title="skin care" price="10,000.00" img={Cream} alt="" />
-              <CardE title="Perfumes" price="20,000.00" img={Pef} alt=""/>
-              <CardE title="Sun glass" price="5,720.000" img={Eye}alt="" />
-              <CardE title="Hair Care" price="3,000.00" img={Hair} alt=""/>
-              <CardE title="Baby lotion" price="15,000.00" img={Baby}alt="" />
-              <CardE title="tootpaste" price="1500.00" img={Paste} alt=""/> */}
+             
             </div>
           </div>
 
