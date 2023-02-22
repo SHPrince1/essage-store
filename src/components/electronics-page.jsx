@@ -119,12 +119,12 @@ import SelectState from "./select-state";
 // function CreateCard(CreateCards){
 //   return <Cards key={CreateCards.id} img={CreateCards.image} price={CreateCards.price} />
 // }
-const numtest = [0, 1, 2, 3, 4, 5];
+// const numtest = [0, 1, 2, 3, 4, 5];
 
-function CheckNum(num) {
-  return num > 3;
-}
-const letsee = numtest.filter(CheckNum);
+// function CheckNum(num) {
+//   return num > 3;
+// }
+// const letsee = numtest.filter(CheckNum);
 // console.log(letsee)
 
 const ElectronicsPage = () => {
