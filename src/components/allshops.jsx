@@ -104,7 +104,7 @@ const AllShops = () => {
           <div className={style.textHead}>
             <p>All Shops</p>
             <input
-              placeholder="Search Items e.g phones, computer, cars, electronic devices"
+              placeholder="Search Items"
               onChange={(event) => {
                 setSearchItem(event.target.value);
               }}
