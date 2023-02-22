@@ -19,13 +19,12 @@ import Mencol from "../images/mencol.webp";
 import Smartwatch from "../images/smartwatch.webp";
 // import Men from "../images/mencol.webp";
 
-
-
 const AllShops = () => {
   const [productData, setProductData] = useState([]);
   const [categoriesData, setCategoriesData] = useState([]);
   const [eightLimitData, setEightLimitData] = useState([]);
   const [fourLimitData, setFourLimitData] = useState([]);
+  const [searchItem, setSearchItem] = useState("");
 
   const options = {
     method: "GET",
@@ -104,22 +103,39 @@ const AllShops = () => {
         <div>
           <div className={style.textHead}>
             <p>All Shops</p>
+            <input
+              placeholder="Search Items e.g phones, computer, cars, electronic devices"
+              onChange={(event) => {
+                setSearchItem(event.target.value);
+              }}
+            />
             <a href="https://essage.com">View All</a>
           </div>
           <div className={style1.cardBox}>
-            {productData.map((item, index) => {
-              return (
-                <Cards
-                  key={item.id}
-                  title={item.title}
-                  img={item.image}
-                  price={item.price}
-                  //  rate={item.rating}
+            {productData
+              .filter((item) => {
+                if (searchItem === "") {
+                  return item;
+                } else if (
+                  item.title.toLowerCase().includes(searchItem.toLowerCase())
+                ) {
+                  return item;
+                } else return false;
+              })
 
-                  category={item.category}
-                />
-              );
-            })}
+              .map((item, index) => {
+                return (
+                  <Cards
+                    key={item.id}
+                    title={item.title}
+                    img={item.image}
+                    price={item.price}
+                    //  rate={item.rating}
+
+                    category={item.category}
+                  />
+                );
+              })}
 
             {}
           </div>
@@ -135,15 +151,14 @@ const AllShops = () => {
             </div>
             <div className={style1.cardBox}>
               <div className={style1.cardBoxDaily}>
-
-              {categoriesData.map((item, index) => (
-                <Cards
-                  key={item.id}
-                  img={item.image}
-                  title={item.title}
-                  price={item.price}
-                />
-              ))}
+                {categoriesData.map((item, index) => (
+                  <Cards
+                    key={item.id}
+                    img={item.image}
+                    title={item.title}
+                    price={item.price}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -158,13 +173,6 @@ const AllShops = () => {
             </div>
 
             <div className={style1.cardBox}>
-              {/* <CardE title="Smart Watch" img={Watch} alt="" />
-              <CardE title="Laptop Bag" img={Bag} alt="" />
-              <CardE title="Ear Pod" img={Pod} alt="" />
-              <CardE title="Wrist watch" img={Awatch} alt="" />
-              <CardE title="Power Bank" img={Pbank} alt="" />
-              <CardE title="Bluetooth Speaker" img={Speaker} alt="" /> */}
-
               {eightLimitData.map((item, index) => {
                 return (
                   <Cards
@@ -198,21 +206,12 @@ const AllShops = () => {
                       //  rate={item.rating}
 
                       category={item.category}
-                    />  
+                    />
                   );
                 })}
               </div>
             </div>
-
-            {/* <CardTv
-              img={Laptop}
-              alt=""
-              h6="A NNEMY TELEVISION GROUP"
-              content="A NNEMY TELEVISION GROUP"
-            /> */}
           </div>
-
-        
         </div>
       </Container>
     </div>
