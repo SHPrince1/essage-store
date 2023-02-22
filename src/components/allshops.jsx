@@ -19,21 +19,12 @@ import Mencol from "../images/mencol.webp";
 import Smartwatch from "../images/smartwatch.webp";
 // import Men from "../images/mencol.webp";
 
-import Watch from "../images/watch.jpg";
-import Bag from "../images/bag.jpeg";
-import Pod from "../images/pod.jpg";
-import Awatch from "../images/awatch.jpeg";
-import Speaker from "../images/speaker.jpg";
-import Pbank from "../images/power.jpg";
-import Tv from "../images/tv1.webp";
-// import Tv1 from "../images/tv.webp";
-import Media from "../images/homet.webp";
-import Laptop from "../images/laptop.jpg";
-import Ps5 from "../images/ps5.webp";
+
 
 const AllShops = () => {
   const [productData, setProductData] = useState([]);
   const [categoriesData, setCategoriesData] = useState([]);
+  const [eightLimitData, setEightLimitData] = useState([]);
   const [fourLimitData, setFourLimitData] = useState([]);
 
   const options = {
@@ -73,12 +64,29 @@ const AllShops = () => {
   });
   const thirdOptions = {
     method: "GET",
-    url: 'https://fakestoreapi.com/products?limit=8',
+    url: "https://fakestoreapi.com/products?limit=8",
   };
 
   useEffect(() => {
     axios
       .request(thirdOptions)
+      .then(function (response) {
+        setEightLimitData(response.data);
+
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  });
+  const fourOptions = {
+    method: "GET",
+    url: "https://fakestoreapi.com/products?limit=4",
+  };
+
+  useEffect(() => {
+    axios
+      .request(fourOptions)
       .then(function (response) {
         setFourLimitData(response.data);
 
@@ -154,7 +162,7 @@ const AllShops = () => {
               <CardE title="Power Bank" img={Pbank} alt="" />
               <CardE title="Bluetooth Speaker" img={Speaker} alt="" /> */}
 
-              {fourLimitData.map((item, index) => {
+              {eightLimitData.map((item, index) => {
                 return (
                   <Cards
                     key={item.id}
@@ -169,86 +177,39 @@ const AllShops = () => {
               })}
             </div>
           </div>
-          {/* mobile view */}
-          <div>
-            <div className={style1.mobilecardBox}>
-              <div className={style1.singleBox}>
-                <CardE title="Smart Watch" img={Watch} alt="" />
-                <CardE title="Laptop Bag" img={Bag} alt="" />
-              </div>
-              <div className={style1.singleBox}>
-                <CardE title="Ear Pod" img={Pod} alt="" />
-                <CardE title="Wrist watch" img={Awatch} alt="" />
-              </div>
-              <div className={style1.singleBox}>
-                <CardE title="Power Bank" img={Pbank} alt="" />
-                <CardE title="Bluetooth Speaker" img={Speaker} alt="" />
-              </div>
-            </div>
-          </div>
 
           <div className={style.textHead}>
             <p>Featured Group</p>
             <a href="href=https://essage.com">View All</a>
           </div>
           <div className={style1.cardBox}>
-            <CardTv
-              img={Tv}
-              alt=""
-              h6="A NNEMY TELEVISION GROUP"
-              content="A NNEMY TELEVISION GROUP"
-            />
-            <CardTv
-              img={Media}
-              alt=""
-              h6="A NNEMY TELEVISION GROUP"
-              content="A NNEMY TELEVISION GROUP"
-            />
-            <CardTv
-              img={Ps5}
-              alt=""
-              h6="A NNEMY TELEVISION GROUP"
-              content="A NNEMY TELEVISION GROUP"
-            />
-            <CardTv
+            <div className={style1.cardBoxContent}>
+              <div className={style1.cardBoxContent2}>
+                {fourLimitData.map((item, index) => {
+                  return (
+                    <CardTv
+                      key={item.id}
+                      title={item.title}
+                      img={item.image}
+                      price={item.price}
+                      //  rate={item.rating}
+
+                      category={item.category}
+                    />  
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* <CardTv
               img={Laptop}
               alt=""
               h6="A NNEMY TELEVISION GROUP"
               content="A NNEMY TELEVISION GROUP"
-            />
+            /> */}
           </div>
 
-          {/* mobile view */}
-          <div>
-            <div className={style1.mobilecardBox}>
-              <div className={style1.singleBoxTv}>
-                <CardTv
-                  img={Tv}
-                  alt=""
-                  h6="A NNEMY TELEVISION GROUP"
-                  content="A NNEMY TELEVISION GROUP"
-                />
-                <CardTv
-                  img={Media}
-                  alt=""
-                  h6="A NNEMY TELEVISION GROUP"
-                  content="A NNEMY TELEVISION GROUP"
-                />
-                <CardTv
-                  img={Ps5}
-                  alt=""
-                  h6="A NNEMY TELEVISION GROUP"
-                  content="A NNEMY TELEVISION GROUP"
-                />
-                <CardTv
-                  img={Laptop}
-                  alt=""
-                  h6="A NNEMY TELEVISION GROUP"
-                  content="A NNEMY TELEVISION GROUP"
-                />
-              </div>
-            </div>
-          </div>
+        
         </div>
       </Container>
     </div>

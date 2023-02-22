@@ -1,8 +1,9 @@
 .cardBox{
-    height: 380px;
+    height: 430px;
     width: 300px;
     border: 2px solid #dfd9d9;
     padding: 30px;
+    gap: 10px;
     border-radius: 20px;
     cursor: pointer;
     transition:  0.2s ease-out;
@@ -22,7 +23,8 @@
 }
 
 .imgElement{
-    width: 260px;
+    width: 240px;
+    height: 300px;
 }
 .logBox{
     width:300px;

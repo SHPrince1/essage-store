@@ -13,7 +13,7 @@ const CardTv = (props) => {
             <p>{props.content}</p>
         </div>
         <div className={style.logBox}>
-            <a href="href=https://essage.com">Login to Join</a>
+            <a href="href=https://essage.com">Add to cart</a>
         </div>
       </div>
     </div>

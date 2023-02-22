@@ -11,12 +11,23 @@
     justify-content: center;
     -webkit-border-radius: 10px;
 }
+.cardBoxContent{
+    display:flex;
+    /* border: 1px solid blue; */
+
+}
 .mobilecardBox{
     display: none;
 }
 .imgCont{
     width: 100%;
 }
+.cardBoxContent2{
+    /* border: 1px solid red; */
+    display: flex;
+   gap: 10px;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -52,5 +63,19 @@
         display: flex;
         overflow: auto;
         gap: 5px;
+    }
+
+    .cardBoxContent{
+        display:flex;
+        /* border: 1px solid red; */
+        flex-wrap: wrap;
+    overflow: auto;
+    
+    }
+    .cardBoxContent2{
+         /* border: 1px solid red; */
+        display: flex;
+        overflow: auto;
+        gap: 10px;
     }
 }
