@@ -9,7 +9,7 @@ import style1 from "../styles/allshops.module.css";
 
 //  importations of components
 import Cards from "../components/cards";
-import CardE from "../components/card-e";
+// import CardE from "../components/card-e";
 import CardTv from "../components/card-tv";
 
 // importations of images
